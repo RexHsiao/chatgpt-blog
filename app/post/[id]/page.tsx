@@ -8,7 +8,7 @@ type Props = {
   params: { id: string }
 }
 
-export const validate = 60
+export const revalidate = 60;
 
 const getPost = async (id: string) => {
   const post = await prisma.post.findUnique({
